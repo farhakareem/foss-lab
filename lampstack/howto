@@ -1,0 +1,18 @@
+Commands followed to install LAMP server-
+
+Step 1: Update Linux
+sudo apt-get update && sudo apt-get dist-upgrade -y
+sudo reboot
+
+Step 2: Install the LAMP Server
+sudo apt-get install lamp-server^ -y
+
+Step 3: Test Apache
+http://localhost
+
+Step 4: Test PHP
+sudo nano /var/www/testing.php
+<?php phpinfo(); ?> (in the file)
+sudo service apache2 restart
+http://localhost/testing.php
+
